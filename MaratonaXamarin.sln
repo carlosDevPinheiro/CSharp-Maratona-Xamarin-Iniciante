@@ -3,8 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Layouts", "3 - Layouts", "{D8EC3C7E-1899-4085-B076-5702EE37F33D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layouts.Android", "Layouts.Android\Layouts.Android.csproj", "{30891A2C-D404-45E4-B536-9E41E396FB27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewDemo", "ListViewDemo\ListViewDemo.csproj", "{352AA593-0291-4A97-9286-231F8681BD17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Conversao", "1 - Conversao", "{900E7888-A75E-4A8F-B687-43D27A565217}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - PopulacaoColombiaMexico", "2 - PopulacaoColombiaMexico", "{63CAD34D-FE41-4527-B87A-F277B9F7B350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversao.Android", "Conversao.Android\Conversao.Android.csproj", "{1A54DBED-CDF7-43D7-A593-67FB2774A7BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopulacaoColombiaMexico", "PopulacaoColombiaMexico\PopulacaoColombiaMexico.csproj", "{8EB23F87-1972-4258-943B-3A5CFBF0ED84}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30891A2C-D404-45E4-B536-9E41E396FB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30891A2C-D404-45E4-B536-9E41E396FB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30891A2C-D404-45E4-B536-9E41E396FB27}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{30891A2C-D404-45E4-B536-9E41E396FB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30891A2C-D404-45E4-B536-9E41E396FB27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30891A2C-D404-45E4-B536-9E41E396FB27}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{352AA593-0291-4A97-9286-231F8681BD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352AA593-0291-4A97-9286-231F8681BD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352AA593-0291-4A97-9286-231F8681BD17}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{352AA593-0291-4A97-9286-231F8681BD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352AA593-0291-4A97-9286-231F8681BD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352AA593-0291-4A97-9286-231F8681BD17}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1A54DBED-CDF7-43D7-A593-67FB2774A7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A54DBED-CDF7-43D7-A593-67FB2774A7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A54DBED-CDF7-43D7-A593-67FB2774A7BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1A54DBED-CDF7-43D7-A593-67FB2774A7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A54DBED-CDF7-43D7-A593-67FB2774A7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A54DBED-CDF7-43D7-A593-67FB2774A7BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8EB23F87-1972-4258-943B-3A5CFBF0ED84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB23F87-1972-4258-943B-3A5CFBF0ED84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB23F87-1972-4258-943B-3A5CFBF0ED84}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8EB23F87-1972-4258-943B-3A5CFBF0ED84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB23F87-1972-4258-943B-3A5CFBF0ED84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB23F87-1972-4258-943B-3A5CFBF0ED84}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30891A2C-D404-45E4-B536-9E41E396FB27} = {D8EC3C7E-1899-4085-B076-5702EE37F33D}
+		{352AA593-0291-4A97-9286-231F8681BD17} = {D8EC3C7E-1899-4085-B076-5702EE37F33D}
+		{1A54DBED-CDF7-43D7-A593-67FB2774A7BB} = {900E7888-A75E-4A8F-B687-43D27A565217}
+		{8EB23F87-1972-4258-943B-3A5CFBF0ED84} = {63CAD34D-FE41-4527-B87A-F277B9F7B350}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+  <TextView
+      android:text="População da Capital"
+      android:layout_width="300dp"
+      android:layout_height="80dp"
+      android:gravity="center" />
+  <TextView
+      android:text="Ingresos Mexico"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="80dp"
+      android:layout_marginRight="80dp"
+      android:gravity="center" />
+  <EditText
+      android:text="0"
+      android:numeric="integer"
+      android:inputType="number"
+      android:id="@+id/txtIngresopMexico"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="80dp"
+      android:layout_alignParentRight="true"
+      android:gravity="center" />
+  <TextView
+      android:text="Egresos Mexico"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="150dp"
+      android:layout_marginRight="80dp"
+      android:gravity="center" />
+  <EditText
+      android:text="0"
+      android:numeric="integer"
+      android:inputType="number"
+      android:id="@+id/txtEgressoMexico"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="150dp"
+      android:layout_alignParentRight="true"
+      android:gravity="center" />
+  <!-- Colombia -->
+  <TextView
+      android:text="Ingresos Colombia"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="210dp"
+      android:layout_marginRight="80dp"
+      android:gravity="center" />
+  <EditText
+      android:text="0"
+      android:numeric="integer"
+      android:inputType="number"
+      android:id="@+id/txtIngresopColombia"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="210dp"
+      android:layout_alignParentRight="true"
+      android:gravity="center" />
+  <TextView
+      android:text="Egresos Colombia"
+      android:layout_width="80dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="280dp"
+      android:layout_marginRight="80dp"
+      android:gravity="center" />
+  <EditText
+      android:text="0"
+      android:numeric="integer"
+      android:inputType="number"
+      android:id="@+id/txtEgressoColombia"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="280dp"
+      android:layout_alignParentRight="true"
+      android:gravity="center" />
+  <Button
+      android:text="Calcular"
+      android:id="@+id/btnCalcular"
+      android:background="#ea1919"
+      android:layout_width="130dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="350dp"
+      android:layout_alignParentRight="true"
+      android:gravity="center" />
+</RelativeLayout>

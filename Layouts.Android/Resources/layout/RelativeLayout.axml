@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:lafan="http://schemas.android.com/apk/res/android"
+    lafan:minWidth="25px"
+    lafan:minHeight="25px"
+    lafan:layout_width="match_parent"
+    lafan:layout_height="match_parent"
+    lafan:id="@+id/relativeLayout1">
+    <Button
+        lafan:text="Button"
+        lafan:layout_width="wrap_content"
+        lafan:layout_height="wrap_content"
+        lafan:id="@+id/button1" />
+    <Button
+        lafan:text="Button 2"
+        lafan:layout_width="wrap_content"
+        lafan:layout_height="wrap_content"
+        lafan:id="@+id/button2"
+        lafan:layout_toRightOf="@+id/button1" />
+    <Button
+        lafan:text="Button 3"
+        lafan:layout_width="wrap_content"
+        lafan:layout_height="wrap_content"
+        lafan:id="@+id/button3"
+        lafan:layout_below="@+id/button1" />
+    <TextView
+        lafan:text="TextView 1"
+        lafan:layout_width="wrap_content"
+        lafan:layout_height="wrap_content"
+        lafan:id="@+id/txtview1"
+        lafan:layout_below="@+id/button3"
+        lafan:layout_marginTop="30dp" />
+</RelativeLayout>
