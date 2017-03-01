@@ -2,10 +2,12 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content;
+using System.IO;
+using SQLite;
 
-namespace PopulacaoColombiaMexico
+namespace SQLiteBD
 {
-    [Activity(Label = "Populacao Colombia Mexico", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "SQLite", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         double CapitalM, CapitalC, IngressosM, IngressosC, EgressosM, EgressosC;
@@ -14,9 +16,19 @@ namespace PopulacaoColombiaMexico
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
-            // SetContentView (Resource.Layout.Main);
+          
             SetContentView(Resource.Layout.Main);
+
+            // caminho onde vamos salvar o BD
+            var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+
+            // combinando o caminho com nome do banco de dados
+            path = Path.Combine(path, "Base.db3");
+
+            var conn = new SQLiteConnection(path);
+
+            // criando uma tabela na conexao
+            conn.CreateTable<Informacoes>();
 
             Button btnCalcular = FindViewById<Button>(Resource.Id.btnCalcular);
             EditText txtIngressoM = FindViewById<EditText>(Resource.Id.txtIngresopMexico);
@@ -37,6 +49,17 @@ namespace PopulacaoColombiaMexico
 
                     CapitalM = IngressosM - EgressosM;
                     CapitalC = IngressosC - EgressosC;
+
+                    var inserir = new Informacoes();
+
+                    inserir.IngressosMexico = IngressosM;
+                    inserir.IngressosColombia = IngressosC;
+                    inserir.EgressosMexixo = EgressosM;
+                    inserir.EgressoaColombia = EgressosC;
+
+                    conn.Insert(inserir);
+                    Toast.MakeText(this, "Salvando em SQLite", ToastLength.Long).Show();
+
                     Cargar();
 
                 }
@@ -54,6 +77,15 @@ namespace PopulacaoColombiaMexico
             objIntent.PutExtra("CapitalC", CapitalC);
             StartActivity(objIntent);
         }
+    }
+
+    public class Informacoes
+    {
+        public double IngressosMexico { get; set;}
+        public double IngressosColombia { get; set; }
+        public double EgressosMexixo { get; set; }
+        public double EgressoaColombia { get; set; }
+
     }
 }
 

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PruebaXamarinFroms"
+             x:Class="PruebaXamarinFroms.MainPage">
+
+    <ContentPage.Padding>
+        
+    </ContentPage.Padding>
+
+    <ScrollView>
+                <StackLayout Orientation="Vertical" Padding="5,0,0,0">
+            <Switch />
+            <Entry />
+
+            <Button Text="Botão" Command="{Binding Path=MessageCommand}" />
+            <Label Text="Data"/>
+            <DatePicker />
+
+            <SearchBar Text="Barra de Pesquisa"/>
+
+            <Slider x:Name="SliderControl" Value="10"/>
+            <Label Text="Indicador de Progresso"></Label>
+            <ProgressBar Progress="{Binding Source={x:Reference Name=SliderControl},Path=Value}" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
