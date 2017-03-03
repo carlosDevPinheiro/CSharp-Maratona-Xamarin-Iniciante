@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAssistControl.UWP", "F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAssistControl.iOS", "FormsAssistControl\FormsAssistControl.iOS\FormsAssistControl.iOS.csproj", "{748E7E40-38B3-406F-A77B-E0410B091DA6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - Servico Rest", "7 - Servico Rest", "{63C7AC75-4AB2-49E2-B9BA-7F0F8835EE85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
