@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormsAssistControl.Storage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FormsAssistControl.Model.Entities
 {
-    public class Estudante : ObservableBaseObject
+    public class Estudante : ObservableBaseObject, IKeyObject
     {
         private string _name;
         private string _lastName;
@@ -14,6 +15,7 @@ namespace FormsAssistControl.Model.Entities
         private string _numeroAluno;
         private double _media;
 
+        public string Key { get; set; }
 
         public string Name
         {
@@ -44,5 +46,7 @@ namespace FormsAssistControl.Model.Entities
             get { return _media; }
             set { _media = value; OnPropertyChanged(); }
         }
+
+       
     }
 }
