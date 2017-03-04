@@ -5,11 +5,17 @@
              x:Class="TesteXamarinForms.MainPage" x:Name="RootPage">
 
     <StackLayout Orientation="Vertical" BindingContext="{Binding Source={x:Reference RootPage}}">
+        <StackLayout.Padding>
+            <OnPlatform x:TypeArguments="Thickness"
+                             iOS="0,20,0,0"
+                             Android="0,0,0,0"
+                             WinPhone="0,20,0,0" />
+        </StackLayout.Padding>
         <ListView ItemsSource="{Binding Countries}"
                   IsPullToRefreshEnabled="True"
                   IsRefreshing="{Binding IsBusy}"
                   RefreshCommand="{Binding RefreshCommand}">
-            
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" Detail="{Binding Region}" />
